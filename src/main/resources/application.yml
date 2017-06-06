@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:h2:mem:data
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  data:
+    rest:
+      base-path: /api/v1
+  h2:
+    console:
+      settings:
+        web-allow-others: true
+      enabled: true
+
+debug: true
